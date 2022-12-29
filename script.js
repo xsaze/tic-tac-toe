@@ -333,5 +333,3 @@ function game() {
     refreshGrid();
     console.log('game is running');
 }
-
-window.onload = game;
