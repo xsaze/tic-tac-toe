@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <div class="container noselect">
+        <div class="popup" id="popup">Select difficulty:
+            <div class="diff-option" id="easy" onclick=selectDiff(1)>Easy</div>
+            <div class="diff-option" id="normal" onclick=selectDiff(2)>Normal</div>
+            <div class="diff-option" id="insane" onclick=selectDiff(3)>Insane</div>
+            <div class="diff-option" id="symbolChoice">
+                <span class="symbol selected" id="symbolX" onclick="selectSymbol('x')">X</span><span class="symbol" id="symbolO" onclick="selectSymbol('o')">O</span>
+            </div>
+        </div>
+    
+        <div class="header">Tic Tac Toe</div>
+    
+        <div class="grid">
+            <div class="cell choice" id="1"></div>
+            <div class="cell choice" id="2"></div>
+            <div class="cell choice" id="3"></div>
+            <div class="cell choice" id="4"></div>
+            <div class="cell choice" id="5"></div>
+            <div class="cell choice" id="6"></div>
+            <div class="cell choice" id="7"></div>
+            <div class="cell choice" id="8"></div>
+            <div class="cell choice" id="9"></div>
+        </div>
+    
+        <div class="text-container">
+            <div id="player-score">Player: 0</div>
+            <div id="comp-score">Comp: 0</div>
+            <div id="new-game" onclick=showDiffPopup()>New Game</div>
+            <div id="reset-btn" onclick=showDiffPopup()>Reset</div>
+        </div>
+    </div>
+</body>
+</html>
